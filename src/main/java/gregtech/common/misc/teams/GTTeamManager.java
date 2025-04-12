@@ -42,6 +42,30 @@ public class GTTeamManager {
         return team;
     }
 
+    /**
+     * Adds a team, but only if the same team (same name, same owners and same members) does not already exist.
+     *
+     * @param team Team to be added.
+     * @return True if a new team was added, false if this is a duplication of an existing team.
+     *
+     *         This fixes an issue where the same team would be saved twice to the NBT data after world reload in
+     *         singleplayer.
+     */
+    public static boolean addTeamDeduplicated(GTTeam team) {
+        for (GTTeam otherTeam : TEAMS) {
+            if (team.getTeamName()
+                .equals(otherTeam.getTeamName())
+                && team.getOwners()
+                    .equals(otherTeam.getOwners())
+                && team.getMembers()
+                    .equals(otherTeam.getMembers())) {
+                return false;
+            }
+        }
+        TEAMS.add(team);
+        return true;
+    }
+
     public static PipelessSteamManager getSteamData(GTTeam team) {
         return (PipelessSteamManager) team.getData(TeamDataTypes.PIPELESS);
     }
