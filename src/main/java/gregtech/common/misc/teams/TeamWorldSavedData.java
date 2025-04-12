@@ -80,7 +80,7 @@ public class TeamWorldSavedData extends WorldSavedData {
                 data.readFromNBT(teamData);
             }
 
-            GTTeamManager.TEAMS.add(team);
+            GTTeamManager.addTeamDeduplicated(team);
         }
     }
 

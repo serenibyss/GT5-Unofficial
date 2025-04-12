@@ -19,8 +19,6 @@ public class GTTeam {
 
     public GTTeam(String teamName) {
         this.teamName = teamName;
-        GTTeamManager.TEAMS.add(this);
-        TeamWorldSavedData.markForSaving();
     }
 
     public String getTeamName() {
