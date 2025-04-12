@@ -54,6 +54,7 @@ public class TeamWorldSavedData extends WorldSavedData {
 
     @Override
     public void readFromNBT(NBTTagCompound NBT) {
+        GTTeamManager.clear();
         NBTTagList teamList = NBT.getTagList("TeamList", Constants.NBT.TAG_COMPOUND);
         for (int i = 0; i < teamList.tagCount(); i++) {
             NBTTagCompound teamTag = teamList.getCompoundTagAt(i);
