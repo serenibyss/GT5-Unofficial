@@ -12518,42 +12518,6 @@ public class LoaderMetaTileEntities implements Runnable { // TODO CHECK CIRCUIT 
         registerNameRemover();
         registerAirFilters();
 
-        // Hide a buncha stuff
-
-        API.hideItem(ItemList.Hatch_Input_Bus_LV.get(1));
-        API.hideItem(ItemList.Hatch_Input_Bus_MV.get(1));
-        API.hideItem(ItemList.Hatch_Input_Bus_HV.get(1));
-        API.hideItem(ItemList.Hatch_Input_Bus_EV.get(1));
-        API.hideItem(ItemList.Hatch_Input_Bus_IV.get(1));
-        API.hideItem(ItemList.Hatch_Input_Bus_LuV.get(1));
-        API.hideItem(ItemList.Hatch_Input_Bus_ZPM.get(1));
-        API.hideItem(ItemList.Hatch_Input_Bus_UV.get(1));
-        API.hideItem(ItemList.Hatch_Input_Bus_MAX.get(1));
-
-        API.hideItem(ItemList.Hatch_Output_Bus_LV.get(1));
-        API.hideItem(ItemList.Hatch_Output_Bus_MV.get(1));
-        API.hideItem(ItemList.Hatch_Output_Bus_HV.get(1));
-        API.hideItem(ItemList.Hatch_Output_Bus_EV.get(1));
-        API.hideItem(ItemList.Hatch_Output_Bus_IV.get(1));
-        API.hideItem(ItemList.Hatch_Output_Bus_LuV.get(1));
-        API.hideItem(ItemList.Hatch_Output_Bus_ZPM.get(1));
-        API.hideItem(ItemList.Hatch_Output_Bus_UV.get(1));
-        API.hideItem(ItemList.Hatch_Output_Bus_MAX.get(1));
-
-        API.hideItem(ItemList.Hatch_Input_EV.get(1));
-        API.hideItem(ItemList.Hatch_Input_IV.get(1));
-        API.hideItem(ItemList.Hatch_Input_LuV.get(1));
-        API.hideItem(ItemList.Hatch_Input_ZPM.get(1));
-        API.hideItem(ItemList.Hatch_Input_UV.get(1));
-        API.hideItem(ItemList.Hatch_Input_MAX.get(1));
-
-        API.hideItem(ItemList.Hatch_Output_EV.get(1));
-        API.hideItem(ItemList.Hatch_Output_IV.get(1));
-        API.hideItem(ItemList.Hatch_Output_LuV.get(1));
-        API.hideItem(ItemList.Hatch_Output_ZPM.get(1));
-        API.hideItem(ItemList.Hatch_Output_UV.get(1));
-        API.hideItem(ItemList.Hatch_Output_MAX.get(1));
-
         ItemList.AdvDebugStructureWriter.set(
             new MTEAdvDebugStructureWriter(
                 ADVANCED_DEBUG_STRUCTURE_WRITTER.ID,
