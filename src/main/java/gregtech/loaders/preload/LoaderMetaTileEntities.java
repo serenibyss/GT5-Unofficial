@@ -929,7 +929,6 @@ import static gregtech.api.recipe.RecipeMaps.wiremillRecipes;
 
 import net.minecraft.util.EnumChatFormatting;
 
-import codechicken.nei.api.API;
 import gregtech.api.enums.GTValues;
 import gregtech.api.enums.ItemList;
 import gregtech.api.enums.MachineType;
@@ -10498,14 +10497,12 @@ public class LoaderMetaTileEntities implements Runnable { // TODO CHECK CIRCUIT 
     }
 
     private static void registerInputHatch() {
-        ItemList.Hatch_Input_ULV.set(
-            new MTEHatchInput(INPUT_HATCH_ULV.ID, "hatch.input.tier.00", "Input Hatch (ULV)", 0).getStackForm(1L));
-        ItemList.Hatch_Input_LV.set(
-            new MTEHatchInput(INPUT_HATCH_LV.ID, "hatch.input.tier.01", "Input Hatch (LV)", 1)
-                .getStackForm(1L));
-        ItemList.Hatch_Input_MV.set(
-            new MTEHatchInput(INPUT_HATCH_MV.ID, "hatch.input.tier.02", "Input Hatch (MV)", 2)
-                .getStackForm(1L));
+        ItemList.Hatch_Input_ULV
+            .set(new MTEHatchInput(INPUT_HATCH_ULV.ID, "hatch.input.tier.00", "Input Hatch (ULV)", 0).getStackForm(1L));
+        ItemList.Hatch_Input_LV
+            .set(new MTEHatchInput(INPUT_HATCH_LV.ID, "hatch.input.tier.01", "Input Hatch (LV)", 1).getStackForm(1L));
+        ItemList.Hatch_Input_MV
+            .set(new MTEHatchInput(INPUT_HATCH_MV.ID, "hatch.input.tier.02", "Input Hatch (MV)", 2).getStackForm(1L));
         ItemList.Hatch_Input_HV
             .set(new MTEHatchInput(INPUT_HATCH_HV.ID, "hatch.input.tier.03", "Input Hatch (HV)", 3).getStackForm(1L));
         ItemList.Hatch_Input_EV
@@ -10616,11 +10613,9 @@ public class LoaderMetaTileEntities implements Runnable { // TODO CHECK CIRCUIT 
         ItemList.Hatch_Output_ULV.set(
             new MTEHatchOutput(OUTPUT_HATCH_ULV.ID, "hatch.output.tier.00", "Output Hatch (ULV)", 0).getStackForm(1L));
         ItemList.Hatch_Output_LV.set(
-            new MTEHatchOutput(OUTPUT_HATCH_LV.ID, "hatch.output.tier.01", "Output Hatch (LV)", 1)
-                .getStackForm(1L));
+            new MTEHatchOutput(OUTPUT_HATCH_LV.ID, "hatch.output.tier.01", "Output Hatch (LV)", 1).getStackForm(1L));
         ItemList.Hatch_Output_MV.set(
-            new MTEHatchOutput(OUTPUT_HATCH_MV.ID, "hatch.output.tier.02", "Output Hatch (MV)", 2)
-                .getStackForm(1L));
+            new MTEHatchOutput(OUTPUT_HATCH_MV.ID, "hatch.output.tier.02", "Output Hatch (MV)", 2).getStackForm(1L));
         ItemList.Hatch_Output_HV.set(
             new MTEHatchOutput(OUTPUT_HATCH_HV.ID, "hatch.output.tier.03", "Output Hatch (HV)", 3).getStackForm(1L));
         ItemList.Hatch_Output_EV.set(
