@@ -567,8 +567,6 @@ public abstract class MTEMultiBlockBase extends MetaTileEntity
     @Override
     public void onPostTick(IGregTechTileEntity aBaseMetaTileEntity, long aTick) {
         if (aBaseMetaTileEntity.isServerSide()) {
-            // Destroy all cursed "electric" multiblocks
-            if (explodesImmediately()) explodeMultiblock();
             // Time Counter
             mTotalRunTime++;
             if (mEfficiency < 0) mEfficiency = 0;
@@ -1524,7 +1522,7 @@ public abstract class MTEMultiBlockBase extends MetaTileEntity
 
     /**
      * Outputs a stack to the multi's output busses. Does not add items to output hatches.
-     * 
+     *
      * @param stack    The stack to output. Any rejected items will remain in the stack.
      * @param simulate When true the method will behave the same but the busses will not be updated
      * @return True when all items were output, false otherwise
